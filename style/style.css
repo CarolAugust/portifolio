@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,600;1,400&display=swap');
+
+
+:root {
+    --cor--primaria:#CFCBC3;
+    --cor--secundaria:white;
+    --cor--terciaria:#002659;
+    --cor--quartenario:#457b9d;
+
+    --fonte--primaria:'Krona One', sans-serif;
+    --fonte--secundaria:'Montserrat Alternates', sans-serif;
+    --fonte--terciaria:'Montserrat', sans-serif;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor--primaria);
+    color: var(--cor--secundaria);
+    gap: 20px 15px;
+}
+
+.cabecalho {
+    padding: 2% 0% 0% 15%;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link {
+    font-family: var(--fonte--primaria);
+    font-size: 0.93rem;
+    font-weight: 200;
+    color: var(--cor--terciaria);
+    text-decoration: none; 
+}
+
+.cabecalho__menu__link:hover {
+    color: var(--corsecundaria);
+    font-size: 1.8rem;
+    transition: all 0.3s;
+
+}
+.apresentacao {
+    padding: 6% 15%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap: 82px;
+}
+  
+.apresentacao__conteudo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 2.25rem;
+    font-family: var(--fonte--primaria);
+
+}
+
+.Titulo-destaque {
+    color: var(--cor--terciaria);
+    
+}
+
+.apresentacao__conteudo__texto {
+    font-size: 1.25rem;
+    font-family: var(--fonte--secundaria);
+    color: var(--cor--terciaria);
+    text-align: left;
+
+}
+.apresentacao__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 23px;
+}
+
+.apresentacao__links__subtitulo {
+    font-family: var(--fonte--secundaria);
+    font-weight: 100;
+    font-size: 1.37rem;
+
+}
+
+.apresentacao_links__link {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    border: 3px solid var(--cor--terciaria);
+    width: 50%;
+    text-align: center;
+    border-radius: 18px;
+    font-size: 1.37rem;
+    padding: 15px 0;
+    color: var(--cor--terciaria);
+    font-family: var(--fonte--terciaria);
+    text-decoration: none; 
+    
+}
+
+.apresentacao_links__link:hover {
+    background-color: var(--cor--quartenario);
+
+}
+
+.apresentacao__imagem {
+    width: 50%;
+
+}
+
+.Rodape {
+    padding: 24px;
+    color: var(--cor--primaria);
+    background-color: var(--cor--terciaria);
+    text-align: center;
+    font-family: var(--fonte--terciaria);
+    font-size: 1.11rem;
+    font-weight:400; 
+ }
+
+ @media (max-width: 1200px) {
+    .cabecalho {
+        padding: 6%;
+    }
+
+    .cabecalho__menu {
+        justify-content: center;
+    }
+   
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5% ;
+    }
+    .apresentacao__conteudo {
+width: auto;
+
+    }
+
+ }
